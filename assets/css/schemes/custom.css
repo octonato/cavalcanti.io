@@ -12,7 +12,8 @@
   --color-neutral-500: 91, 106, 130;
   --color-neutral-600: 58, 74, 102;
   --color-neutral-700: 30, 51, 84;
-  --color-neutral-800: 0, 31, 66;   /* main body text: #001F42 navy */
+  --color-neutral-800: 0, 31, 66;
+  /*--color-neutral-800: 55, 94, 81;*/
   --color-neutral-900: 0, 22, 49;
   /* Navy/blue primary accent */
   --color-primary-50: 234, 240, 247;

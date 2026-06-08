@@ -1,4 +1,4 @@
-/* Widen the page container to 85% of the viewport. */
+/* Widen the page container to 95% of the viewport. */
 body.max-w-7xl {
   max-width: 95vw;
 }
@@ -12,7 +12,7 @@ body.max-w-7xl {
 }
 .site-banner {
   background-color: rgb(var(--color-neutral));
-  border-bottom: 1px solid rgb(var(--color-neutral-800)); /* marine #001F42 */
+  border-bottom: 1px solid rgb(var(--color-neutral-800));
 }
 .site-banner,
 .site-banner a,
@@ -43,7 +43,7 @@ body.max-w-7xl {
 }
 .site-banner nav a:has(.active),
 .site-banner nav a:has(.active):hover {
-  background-color: rgb(var(--color-neutral-800)); /* marine #001F42 */
+  background-color: rgb(var(--color-neutral-800));
   color: rgb(var(--color-neutral-50));
 }
 /* Replace the theme's underline on the selected item with the rectangle above. */
