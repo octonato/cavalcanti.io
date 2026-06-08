@@ -1,0 +1,37 @@
+{{/* Override of Blowfish basic header: two-line site title. */}}
+<div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  <a href="{{ "" | relLangURL }}" class="site-title flex flex-col font-bold leading-tight min-w-0 shrink">
+    <span>Renato</span>
+    <span>Cavalcanti</span>
+  </a>
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      {{ partial "header/components/desktop-menu.html" . }}
+    </div>
+    <div class="flex md:hidden">
+      {{ partial "header/components/mobile-menu.html" . }}
+    </div>
+  </div>
+</div>
+
+{{ if .Site.Params.highlightCurrentMenuArea }}
+  <script>
+    (function () {
+      var mainmenu = document.querySelector(".main-menu");
+      if (!mainmenu) return;
+
+      var path = window.location.pathname;
+
+      mainmenu.querySelectorAll("a[href]").forEach(function (link) {
+        var href = link.getAttribute("href");
+        // Home matches "/" exactly; section links match any page beneath them.
+        var isActive =
+          href === path || (href !== "/" && href.length > 1 && path.indexOf(href) === 0);
+        if (!isActive) return;
+        link.querySelectorAll("span").forEach(function (el) {
+          el.classList.add("active");
+        });
+      });
+    })();
+  </script>
+{{ end }}

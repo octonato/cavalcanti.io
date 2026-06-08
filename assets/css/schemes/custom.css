@@ -1,6 +1,8 @@
 /* Custom scheme — light background, dark text */
 :root {
   --color-neutral: 248, 244, 241; /* F8F4F1 page background */
+  --color-neutral: 243, 244, 245; /* F3F4F5 page background */
+  --color-neutral: 234, 234, 230; /* EAEAE6 page background */
   /* Cream -> navy neutral scale (text uses the dark end) */
   --color-neutral-50: 254, 250, 241;
   --color-neutral-100: 251, 241, 222;
