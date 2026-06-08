@@ -1,5 +1,5 @@
 +++
-title = "cavalcanti.io"
+title = "Renato Cavalcanti"
 description = "Personal site of Renato Cavalcanti"
 +++
 
