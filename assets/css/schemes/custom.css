@@ -1,0 +1,37 @@
+/* Custom scheme — light background, dark text */
+:root {
+  --color-neutral: 248, 244, 241; /* F8F4F1 page background */
+  /* Cream -> navy neutral scale (text uses the dark end) */
+  --color-neutral-50: 254, 250, 241;
+  --color-neutral-100: 251, 241, 222;
+  --color-neutral-200: 242, 228, 201;
+  --color-neutral-300: 200, 197, 188;
+  --color-neutral-400: 140, 151, 168;
+  --color-neutral-500: 91, 106, 130;
+  --color-neutral-600: 58, 74, 102;
+  --color-neutral-700: 30, 51, 84;
+  --color-neutral-800: 0, 31, 66;   /* main body text: #001F42 navy */
+  --color-neutral-900: 0, 22, 49;
+  /* Navy/blue primary accent */
+  --color-primary-50: 234, 240, 247;
+  --color-primary-100: 213, 224, 238;
+  --color-primary-200: 169, 192, 220;
+  --color-primary-300: 123, 160, 201;
+  --color-primary-400: 78, 127, 179;
+  --color-primary-500: 44, 94, 148;
+  --color-primary-600: 30, 74, 120;
+  --color-primary-700: 22, 58, 96;
+  --color-primary-800: 16, 43, 71;
+  --color-primary-900: 0, 31, 66;
+  /* Navy secondary */
+  --color-secondary-50: 234, 240, 247;
+  --color-secondary-100: 213, 224, 238;
+  --color-secondary-200: 169, 192, 220;
+  --color-secondary-300: 123, 160, 201;
+  --color-secondary-400: 78, 127, 179;
+  --color-secondary-500: 44, 94, 148;
+  --color-secondary-600: 30, 74, 120;
+  --color-secondary-700: 22, 58, 96;
+  --color-secondary-800: 16, 43, 71;
+  --color-secondary-900: 0, 31, 66;
+}

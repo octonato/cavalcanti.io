@@ -1,0 +1,14 @@
+/* Navy top banner (#001F42) with cream text, in both light and dark modes. */
+.site-banner {
+  background-color: rgb(var(--color-neutral-800));
+}
+.site-banner,
+.site-banner a,
+.site-banner .bf-icon-color-hover {
+  color: rgb(var(--color-neutral-50));
+}
+.site-banner a:hover,
+.site-banner .bf-icon-color-hover:hover {
+  color: rgb(var(--color-primary-300));
+  opacity: 1;
+}
