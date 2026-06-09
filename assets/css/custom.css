@@ -1,9 +1,9 @@
-/* Widen the page container to 95% of the viewport. */
+/* Widen the page container to 70% of the viewport. */
 body.max-w-7xl {
-  max-width: 95vw;
+  max-width: 70vw;
 }
 .site-banner .max-w-7xl {
-  max-width: 95vw;
+  max-width: 70vw;
 }
 
 /* Top banner: same background as the page, with a discreet separating line. */
