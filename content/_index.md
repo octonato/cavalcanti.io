@@ -1,2 +1,1 @@
-
-Welcome. This is the homepage hero content — edit `content/_index.md` to change it.
+Welcome. This is where I write about software engineering and the craft behind it, the design decisions, the trade-offs, and what I learn along the way. Have a look around.
