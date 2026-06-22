@@ -11,8 +11,10 @@ body.max-w-7xl {
   --header-height: 5.5rem;
 }
 .site-banner {
-  background-color: rgb(var(--color-neutral));
+  background-color: rgba(var(--color-neutral), 0.7);
   border-bottom: 1px solid rgb(var(--color-neutral-800));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .site-banner,
 .site-banner a,
