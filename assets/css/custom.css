@@ -57,3 +57,11 @@ body.max-w-7xl {
 .site-banner .active {
   text-decoration-line: none;
 }
+
+/* Scale the whole site up by 20% (like a 1.2x browser zoom). Almost all
+   sizing in the theme is rem-based, so raising the root font-size enlarges
+   content, post lists, and chrome together and proportionally. */
+
+html {
+    font-size: 1.2rem;
+}
