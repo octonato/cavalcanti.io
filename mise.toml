@@ -1,0 +1,19 @@
+[tools]
+hugo-extended = "0.161.1"
+go = "1.22"
+
+[tasks.dev]
+description = "Serve the site with drafts and live reload"
+run = "hugo server -D"
+
+[tasks.build]
+description = "Production build, same flags as CI"
+run = "hugo --gc --minify"
+
+[tasks.clean]
+description = "Remove build output and generated resources"
+run = "rm -rf public resources/_gen"
+
+[tasks.update-theme]
+description = "Update the Blowfish module"
+run = "hugo mod get -u github.com/nunocoracao/blowfish/v2 && hugo mod tidy"
