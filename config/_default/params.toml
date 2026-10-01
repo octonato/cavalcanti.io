@@ -58,7 +58,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [homepage]
   layout = "page" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/homepage.jpg" # place file at assets/img/homepage.jpg
-  showRecent = true
+  showRecent = false # FIXME: set to true when the blog launches
   showRecentItems = 5
   showMoreLink = false
   showMoreLinkDest = "/posts/"

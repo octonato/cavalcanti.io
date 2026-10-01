@@ -1,8 +1,7 @@
-{{/* Override of Blowfish basic header: two-line site title. */}}
+{{/* Override of Blowfish basic header: site title and menu. */}}
 <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
-  <a href="{{ "" | relLangURL }}" class="site-title flex flex-col font-bold leading-tight min-w-0 shrink">
-    <span>Octo Cogito</span>
-    <span class="site-subtitle">by Renato G. Cavalcanti</span>
+  <a href="{{ "" | relLangURL }}" class="site-title font-bold leading-tight min-w-0 shrink">
+    {{ .Site.Title }}
   </a>
   <div class="flex items-center ms-auto">
     <div class="hidden md:flex">

@@ -1,3 +1,27 @@
+/* Green palette, as RGB triplets for use with rgb() and rgba(). */
+:root {
+  --green-forest: 24, 52, 40;   /* #183428 dark ink and blocks */
+  --green-pine: 31, 74, 55;     /* #1f4a37 dark hover */
+  --green-fern: 50, 112, 80;    /* #327050 mid accent */
+  --green-sage: 128, 178, 150;  /* #80b296 soft accent */
+  --green-mint: 214, 232, 221;  /* #d6e8dd pale background */
+  --green-lime: 208, 228, 140;  /* #d0e48c light accent on dark green */
+  --green-lime-soft: 228, 240, 184; /* #e4f0b8 pale lime background */
+  --green-paper: 245, 242, 233; /* #f5f2e9 warm off-white */
+}
+
+/* Young Serif for titles and the top banner, at its only weight. */
+:root {
+  --title-font: 'Young Serif', Georgia, serif;
+}
+h1, h2, h3, h4,
+.site-banner {
+  font-family: var(--title-font);
+}
+h1, h2, h3, h4 {
+  font-weight: 400 !important;
+}
+
 /* Widen the page container to 70% of the viewport. */
 body.max-w-7xl {
   max-width: 70vw;
@@ -27,15 +51,10 @@ body.max-w-7xl {
   min-height: var(--header-height);
 }
 
-/* Two-line site title, larger. */
+/* Larger site title. */
 .site-banner .site-title {
   font-size: 1.75rem;
   line-height: 1.1;
-}
-
-/* Subtitle ("by Renato Cavalcanti"): smaller than the title. */
-.site-banner .site-subtitle {
-  font-size: 1rem;
 }
 
 /* Menu items: rounded rectangle on hover and for the selected item. */
@@ -45,12 +64,12 @@ body.max-w-7xl {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 .site-banner nav a:hover {
-  background-color: #26405e; /* lighter marine */
+  background-color: rgb(var(--green-pine));
   color: rgb(var(--color-neutral-50));
 }
 .site-banner nav a:has(.active),
 .site-banner nav a:has(.active):hover {
-  background-color: rgb(var(--color-neutral-800));
+  background-color: rgb(var(--green-forest));
   color: rgb(var(--color-neutral-50));
 }
 /* Replace the theme's underline on the selected item with the rectangle above. */
