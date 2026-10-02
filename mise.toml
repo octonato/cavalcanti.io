@@ -1,6 +1,7 @@
 [tools]
 hugo-extended = "0.161.1"
 go = "1.22"
+lychee = "latest"
 
 [tasks.watch]
 description = "Serve the site with drafts and live reload"
@@ -9,6 +10,13 @@ run = "hugo server -D"
 [tasks.build]
 description = "Production build, same flags as CI"
 run = "hugo --gc --minify"
+
+[tasks.check]
+description = "Strict build and internal link check, same as CI"
+run = [
+  "hugo --gc --minify --panicOnWarning --baseURL /",
+  "lychee --offline --no-progress --root-dir {{config_root}}/public 'public/**/*.html'",
+]
 
 [tasks.clean]
 description = "Remove build output and generated resources"
