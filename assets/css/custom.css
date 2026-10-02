@@ -158,6 +158,23 @@ h1, h2, h3, h4 {
   color: rgb(var(--color-neutral-600));
 }
 
+/* Slide deck embedded on a talk page, at 16:9. */
+.talk-slides {
+  overflow: hidden;
+  border: 1px solid rgb(var(--green-sage));
+  border-radius: 0.75rem;
+}
+.talk-slides-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.talk-slides-link {
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
 /* Scale the whole site up by 20% (like a 1.2x browser zoom). Almost all
    sizing in the theme is rem-based, so raising the root font-size enlarges
    content, post lists, and chrome together and proportionally. */
