@@ -2,6 +2,7 @@
 :root {
   --green-forest: 24, 52, 40;   /* #183428 dark ink and blocks */
   --green-pine: 31, 74, 55;     /* #1f4a37 dark hover */
+  --green-teal: 0, 67, 61;      /* #00433d titles and selected menu */
   --green-fern: 50, 112, 80;    /* #327050 mid accent */
   --green-sage: 128, 178, 150;  /* #80b296 soft accent */
   --green-mint: 214, 232, 221;  /* #d6e8dd pale background */
@@ -22,12 +23,18 @@ h1, h2, h3, h4 {
   font-weight: 400 !important;
 }
 
-/* Widen the page container to 70% of the viewport. */
-body.max-w-7xl {
-  max-width: 70vw;
+/* Page title and site title in teal green. */
+#single_header h1,
+.site-banner .site-title {
+  color: rgb(var(--green-teal));
 }
-.site-banner .max-w-7xl {
-  max-width: 70vw;
+
+/* Widen the page container to 70% of the viewport on large screens. */
+@media (min-width: 1024px) {
+  body.max-w-7xl,
+  .site-banner .max-w-7xl {
+    max-width: 70vw;
+  }
 }
 
 /* Top banner: same background as the page, with a discreet separating line. */
@@ -64,12 +71,12 @@ body.max-w-7xl {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 .site-banner nav a:hover {
-  background-color: rgb(var(--green-pine));
-  color: rgb(var(--color-neutral-50));
+  background-color: rgb(var(--green-lime));
+  color: rgb(var(--green-teal));
 }
 .site-banner nav a:has(.active),
 .site-banner nav a:has(.active):hover {
-  background-color: rgb(var(--green-forest));
+  background-color: rgb(var(--green-teal));
   color: rgb(var(--color-neutral-50));
 }
 /* Replace the theme's underline on the selected item with the rectangle above. */
@@ -80,7 +87,8 @@ body.max-w-7xl {
 /* Scale the whole site up by 20% (like a 1.2x browser zoom). Almost all
    sizing in the theme is rem-based, so raising the root font-size enlarges
    content, post lists, and chrome together and proportionally. */
-
-html {
+@media (min-width: 1024px) {
+  html {
     font-size: 1.2rem;
+  }
 }
