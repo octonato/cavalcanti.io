@@ -2,7 +2,7 @@
 hugo-extended = "0.161.1"
 go = "1.22"
 
-[tasks.dev]
+[tasks.watch]
 description = "Serve the site with drafts and live reload"
 run = "hugo server -D"
 
