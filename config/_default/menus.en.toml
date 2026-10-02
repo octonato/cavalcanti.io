@@ -11,11 +11,6 @@
 # ordered by weight from lowest to highest.
 
 # -- Placeholder menu items (fill in / extend later) --
-[[main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 10
-
 # FIXME: restore when the blog launches.
 #[[main]]
 #  name = "Posts"
@@ -29,7 +24,7 @@
 
 [[main]]
   name = "About"
-  pageRef = "about"
+  pageRef = "/"
   weight = 30
 
 #[[main]]
