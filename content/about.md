@@ -1,5 +1,6 @@
 +++
 title = "About"
+layout = "about"
 showHero = false
 showReadingTime = false
 showDate = false
