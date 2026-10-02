@@ -13,18 +13,10 @@
 
       {{ $thumbnail := .Params.thumbnail }}
       {{ with .Params.youtube }}
-        {{ $thumbnail = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" . }}
+        {{ $thumbnail = printf "https://i.ytimg.com/vi/%s/hq720.jpg" . }}
       {{ end }}
 
       <a class="talk-tile" href="{{ .RelPermalink }}">
-        <div class="talk-tile-media">
-          <img
-            class="talk-tile-thumbnail"
-            src="{{ $thumbnail }}"
-            alt="{{ .Title }}"
-            loading="lazy">
-        </div>
-
         <div class="talk-tile-body">
           <p class="talk-tile-meta">
             {{ .Date | time.Format ":date_medium" }}
@@ -35,6 +27,14 @@
           </p>
           <h2 class="talk-tile-title">{{ .Title | emojify }}</h2>
           <p class="talk-tile-description">{{ .Description }}</p>
+        </div>
+
+        <div class="talk-tile-media">
+          <img
+            class="talk-tile-thumbnail"
+            src="{{ $thumbnail }}"
+            alt="{{ .Title }}"
+            loading="lazy">
         </div>
       </a>
     {{ end }}
