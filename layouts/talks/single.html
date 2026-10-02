@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <article class="mx-auto max-w-prose">
+    <header id="single_header" class="mt-5">
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title | emojify }}
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
+      </div>
+    </header>
+
+    <section class="prose dark:prose-invert">
+      <div class="article-content mb-20">
+        {{ .Content }}
+      </div>
+    </section>
+
+    <footer class="pt-8 print:hidden">
+      {{ partial "article-pagination.html" . }}
+    </footer>
+  </article>
+{{ end }}

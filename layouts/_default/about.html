@@ -6,8 +6,8 @@
     (dict "icon" "email" "title" "Email" "url" "mailto:renato@cavalcanti.io")
   }}
 
-  <article>
-    <header id="single_header" class="mt-5 mb-6 max-w-prose flex flex-wrap items-center gap-x-6">
+  <article class="mx-auto max-w-prose">
+    <header id="single_header" class="mt-5 mb-6 flex flex-wrap items-center gap-x-6">
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
         {{ .Title | emojify }}
       </h1>
@@ -27,7 +27,7 @@
     </header>
 
     <section class="prose dark:prose-invert">
-      <div class="article-content max-w-prose mb-20">
+      <div class="article-content mb-20">
         {{ .Content }}
       </div>
     </section>
