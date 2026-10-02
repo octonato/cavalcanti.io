@@ -82,8 +82,8 @@ h1, h2, h3, h4 {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 .site-banner nav a:hover {
-  background-color: rgb(var(--green-lime));
-  color: rgb(var(--green-teal));
+  background-color: var(--plum);
+  color: rgb(var(--color-neutral-50));
 }
 .site-banner nav a:has(.active),
 .site-banner nav a:has(.active):hover {
