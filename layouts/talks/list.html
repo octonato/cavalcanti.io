@@ -11,11 +11,16 @@
       {{ $hours := div $seconds 3600 }}
       {{ $minutes := div (mod $seconds 3600) 60 }}
 
+      {{ $thumbnail := .Params.thumbnail }}
+      {{ with .Params.youtube }}
+        {{ $thumbnail = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" . }}
+      {{ end }}
+
       <a class="talk-tile" href="{{ .RelPermalink }}">
         <div class="talk-tile-media">
           <img
             class="talk-tile-thumbnail"
-            src="https://i.ytimg.com/vi/{{ .Params.youtube }}/hqdefault.jpg"
+            src="{{ $thumbnail }}"
             alt="{{ .Title }}"
             loading="lazy">
         </div>
@@ -23,8 +28,10 @@
         <div class="talk-tile-body">
           <p class="talk-tile-meta">
             {{ .Date | time.Format ":date_medium" }}
-            ·
-            {{ if gt $hours 0 }}{{ $hours }}h {{ $minutes }}min{{ else }}{{ $minutes }} min{{ end }}
+            {{ if gt $seconds 0 }}
+              ·
+              {{ if gt $hours 0 }}{{ $hours }}h {{ $minutes }}min{{ else }}{{ $minutes }} min{{ end }}
+            {{ end }}
           </p>
           <h2 class="talk-tile-title">{{ .Title | emojify }}</h2>
           <p class="talk-tile-description">{{ .Description }}</p>

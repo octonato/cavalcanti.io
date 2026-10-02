@@ -1,0 +1,14 @@
+{{ $src := printf "/presentations/%s/" (.Get 0) | relURL }}
+
+<div class="talk-slides">
+  <iframe
+    class="talk-slides-frame"
+    src="{{ $src }}"
+    title="{{ .Page.Title }} slides"
+    loading="lazy"
+    allowfullscreen></iframe>
+</div>
+
+<p class="talk-slides-link">
+  <a href="{{ $src }}" target="_blank" rel="noopener">Open slides</a>
+</p>
