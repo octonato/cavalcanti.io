@@ -39,4 +39,12 @@
   --color-secondary-700: 0, 67, 61;
   --color-secondary-800: 0, 52, 47;
   --color-secondary-900: 0, 37, 34;
+
+  --plum: #700353;
+  --plum-deep: #4f023a;
+  --plum-aubergine: #48284a;
+  --plum-dusty: #6b3a5e;
+  --plum-bright: #8e1a6b;
+  --plum-rose: #a3427f;
+  --plum-light: #f0c4dd;
 }
