@@ -29,11 +29,11 @@ h1, h2, h3, h4 {
   color: rgb(var(--green-teal));
 }
 
-/* Widen the page container to 70% of the viewport on large screens. */
+/* Widen the page container to 90% of the viewport on large screens. */
 @media (min-width: 1024px) {
   body.max-w-7xl,
   .site-banner .max-w-7xl {
-    max-width: 70vw;
+    max-width: 85vw;
   }
 }
 
@@ -62,6 +62,13 @@ h1, h2, h3, h4 {
 .site-banner .site-title {
   font-size: 1.75rem;
   line-height: 1.1;
+}
+
+/* Site title wraps only between words. */
+.site-banner .site-title {
+  min-width: min-content;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 /* Menu items: rounded rectangle on hover and for the selected item. */
