@@ -14,4 +14,3 @@ I'm Renato Guerra Cavalcanti, an independent software architect and consultant. 
 
 Whether on a team or alongside one, I help people reason about the trade-offs underneath their code and stay in the driver's seat as their software grows. What I care about is thinking before building. That matters even more now that AI can write the code but not make the judgment calls.
 
-This site is where I publish my talks, write about engineering and the craft behind it, and share what I'm learning.
