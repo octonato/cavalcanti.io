@@ -5,7 +5,7 @@ lychee = "latest"
 
 [tasks.watch]
 description = "Serve the site with drafts and live reload"
-run = "hugo server -D"
+run = "hugo server -D --buildFuture"
 
 [tasks.build]
 description = "Production build, same flags as CI"
