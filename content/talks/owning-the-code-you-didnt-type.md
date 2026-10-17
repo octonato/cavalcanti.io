@@ -1,10 +1,14 @@
 +++
 title = "Owning the Code You Didn't Type"
 date = 2026-10-08
+youtube = "SQUrHzMie3o"
+duration = 3022
 slides = "owning-the-code"
 thumbnail = "/presentations/owning-the-code/img/cordas.jpg"
 description = "Practical recipes to stay in control of code that an assistant writes faster than you can read it."
 +++
+
+{{< youtube SQUrHzMie3o >}}
 
 {{< slides owning-the-code >}}
 
@@ -22,4 +26,4 @@ This talk is not a manifesto, it is a set of recipes. The practices I use daily 
 
 Together these form a flow that keeps me in control and grows my knowledge instead of eroding it. You will leave with techniques you can apply the next day, whatever assistant you use.
 
-Presented at Devoxx Belgium 2026.
+Recorded at Devoxx Belgium 2026.

@@ -12,8 +12,8 @@
       {{ $minutes := div (mod $seconds 3600) 60 }}
 
       {{ $thumbnail := .Params.thumbnail }}
-      {{ with .Params.youtube }}
-        {{ $thumbnail = printf "https://i.ytimg.com/vi/%s/hq720.jpg" . }}
+      {{ if and (not $thumbnail) .Params.youtube }}
+        {{ $thumbnail = printf "https://i.ytimg.com/vi/%s/hq720.jpg" .Params.youtube }}
       {{ end }}
 
       <a class="talk-tile" href="{{ .RelPermalink }}">
