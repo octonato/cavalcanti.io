@@ -159,6 +159,19 @@ h1, h2, h3, h4 {
   }
 }
 
+/* YouTube video embedded on a talk page, at 16:9. */
+.talk-video {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+}
+.talk-video-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 /* Slide deck embedded on a talk page, at 16:9. */
 .talk-slides {
   overflow: hidden;
