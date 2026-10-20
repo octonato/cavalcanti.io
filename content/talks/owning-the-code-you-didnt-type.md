@@ -4,7 +4,7 @@ date = 2026-10-08
 youtube = "SQUrHzMie3o"
 duration = 3022
 slides = "owning-the-code"
-thumbnail = "/presentations/owning-the-code/img/cordas.jpg"
+thumbnail = "/presentations/owning-the-code/img/thumbnail.jpg"
 description = "Practical recipes to stay in control of code that an assistant writes faster than you can read it."
 +++
 
