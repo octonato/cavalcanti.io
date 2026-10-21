@@ -1,8 +1,8 @@
 +++
 title = "Depth Over Fluency"
-date = 2026-09-18
+date = 2026-10-21
 slides = "depth-over-fluency"
-thumbnail = "/presentations/depth-over-fluency/img/thumbnail.png"
+thumbnail = "/presentations/depth-over-fluency/img/thumbnail.jpg"
 description = "Assistants lend us language fluency, but only language depth lets us judge and trust the code they write."
 +++
 
@@ -10,4 +10,4 @@ description = "Assistants lend us language fluency, but only language depth lets
 
 Code assistants now write competent code on demand, even in languages we have barely touched. This talk argues that language fluency and language depth are decoupling. Fluency is the muscle memory of idiomatic code, and we can now borrow it from an assistant. Depth means understanding type systems, concurrency models, memory semantics and a language's design trade-offs, and it lets us evaluate, steer and trust what the assistant produces. The assistant does the typing, but the judgment is still yours.
 
-Presented at KTConf 2026 in Leuven.
+Presented at jDD 2026 in Krakow and KTConf 2026 in Leuven.
